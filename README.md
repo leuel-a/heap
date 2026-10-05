@@ -1,8 +1,6 @@
 # Heap
 
-A small, fixed-capacity **max-heap** of `int`s, implemented in C.
-
-## Build and run
+A small, fixed-capacity **max-heap** of `int`s, implemented in C. To build and run use:
 
 ```sh
 gcc -Wall -Wextra -g main.c heap.c -o heap
