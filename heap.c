@@ -64,7 +64,7 @@ int heap_pop(Heap *heap) {
     heap->items[0] = heap->items[index];
 
     int j = 0;
-    while ((2 * j + 1) < heap->size) {
+    while ((2 * j + 1) < (heap->size - heap->capacity - 1)) {
         int k = 2 * j + 1;
 
         if ((k + 1 < heap->size) && (heap->items[k] < heap->items[k + 1])) {
