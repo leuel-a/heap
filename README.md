@@ -7,16 +7,6 @@ gcc -Wall -Wextra -g main.c heap.c -o heap
 ./heap
 ```
 
-## API
-
-| Function                              | Description                                                                 |
-| ------------------------------------- | --------------------------------------------------------------------------- |
-| `int heap_init(Heap *h, int size)`    | Allocates room for `size` items. Returns `0` on success, `1` on failure.    |
-| `int heap_push(Heap *h, int value)`   | Inserts `value`. Returns `0` on success, `1` if the heap is full.           |
-| `int heap_pop(Heap *h)`               | Removes and returns the largest value. Returns `0` if the heap is empty.    |
-| `void print_heap(Heap *h)`            | Prints the backing array in level order, for debugging.                     |
-| `void heap_free(Heap *h)`             | Frees the backing array and resets the struct.                              |
-
 ## Example
 
 ```c
